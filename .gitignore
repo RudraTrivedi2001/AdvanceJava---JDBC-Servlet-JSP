@@ -1,0 +1,6 @@
+# Ignore Eclipse project metadata
+.metadata/
+*.launch
+.settings/
+bin/
+target/
