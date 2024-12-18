@@ -1,6 +1,21 @@
-# Ignore Eclipse project metadata
+# Ignore Eclipse metadata
 .metadata/
-*.launch
 .settings/
+.classpath
+.project
+
+# Ignore server configurations
+Servers/
+.tmp/
+
+# Ignore build directories
 bin/
 target/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+
+# Ignore IDE files
+*.iml
+.idea/
