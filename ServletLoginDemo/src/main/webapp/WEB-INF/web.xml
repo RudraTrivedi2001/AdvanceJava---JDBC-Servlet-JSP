@@ -4,7 +4,7 @@
     <description></description>
     <display-name>LoginPage</display-name>
     <servlet-name>LoginPage</servlet-name>
-    <servlet-class>com.annotation.java.LoginPage</servlet-class>
+    <servlet-class>com.ServletDemo.java.LoginPage</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>LoginPage</servlet-name>
