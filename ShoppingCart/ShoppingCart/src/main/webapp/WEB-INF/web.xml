@@ -1,0 +1,67 @@
+<web-app>
+    <display-name>Shopping Cart Application</display-name>
+
+  
+    <servlet>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <servlet-class>dac.AddToCartServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <servlet-class>dac.ViewCartServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+    <servlet-name>ProductListServlet</servlet-name>
+    <servlet-class>dac.ProductListServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ProductListServlet</servlet-name>
+    <url-pattern>/ProductListServlet</url-pattern>
+</servlet-mapping>
+
+    <!-- Servlet Mappings -->
+    <servlet-mapping>
+        <servlet-name>AddToCartServlet</servlet-name>
+        <url-pattern>/addToCart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>ViewCartServlet</servlet-name>
+        <url-pattern>/viewCart</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <servlet-class>dac.CheckoutServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>CheckoutServlet</servlet-name>
+    <url-pattern>/checkout</url-pattern>
+</servlet-mapping>
+    
+    
+
+    <!-- Welcome File List -->
+    <welcome-file-list>
+        <welcome-file>Index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Context Parameters (if needed) -->
+    <context-param>
+        <param-name>exampleParam</param-name>
+        <param-value>exampleValue</param-value>
+    </context-param>
+
+    <!-- Error Pages (optional) -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/error404.jsp</location>
+    </error-page>
+    
+    <error-page>
+        <error-code>500</error-code>
+        <location>/error500.jsp</location>
+    </error-page>
+</web-app>
